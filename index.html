@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- For IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- For Resposive Device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Part I JQuery</title>
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
+
+
+		<!-- Main style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- responsive style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+		<!--ESTILOS PROPIOS-->
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+
+		<!-- Fix Internet Explorer ______________________________________-->
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="vendor/html5shiv.js"></script>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->
+			
+	</head>
+
+	<body>
+		<div class="main-page-wrapper">
+
+
+
+			<!-- 
+			=============================================
+				Theme Header
+			============================================== 
+			-->
+			<header class="theme-main-header">
+				<div class="container">
+					<a href="index.html" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo"></a>
+					
+					<!-- ========================= Theme Feature Page Menu ======================= -->
+					<nav class="navbar float-right theme-main-menu one-page-menu">
+					   <!-- Brand and toggle get grouped for better mobile display -->
+					   <div class="navbar-header">
+					     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+					       <span class="sr-only">Toggle navigation</span>
+					       Menu
+					       <i class="fa fa-bars" aria-hidden="true"></i>
+					     </button>
+					   </div>
+					   <!-- Collect the nav links, forms, and other content for toggling -->
+					   <div class="collapse navbar-collapse" id="navbar-collapse-1">
+					     <ul class="nav navbar-nav">
+					       	<li class="active"><a href="#home">Inicio</a></li>
+							<li><a href="#about-us">Introduccion</a></li>
+							<li><a href="#team-section">Sintaxis</a></li>
+							<li><a href="#service-section">Animaciones</a></li>
+							<li><a href="#project-section">Efectos</a></li>	
+							
+					     </ul>
+					   </div><!-- /.navbar-collapse -->
+					</nav> <!-- /.theme-feature-menu -->
+				</div>
+			</header> <!-- /.theme-main-header -->
+
+
+			<!--
+			=====================================================
+				Theme Main SLider
+			=====================================================
+			-->
+			<div id="home" class="banner">
+	        	<div class="rev_slider_wrapper">
+					<!-- START REVOLUTION SLIDER 5.0.7 auto mode -->
+						<div id="main-banner-slider" class="rev_slider video-slider" data-version="5.0.7">
+							<ul>
+
+								<!-- SLIDE1  -->
+								<li data-index="rs-280" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default"  data-title="Title Goes Here" data-description="">
+									<!-- MAIN IMAGE -->
+									<img src="images/home/slide-1.jpg"  alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140">
+									<!-- LAYERS -->
+
+									<!-- LAYER NR. 1 -->
+									<div class="tp-caption" 
+										data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['-58','-58','0','-50']" 
+										data-width="none"
+										data-height="none"
+										data-whitespace="nowrap"
+										data-transform_idle="o:1;"
+							 
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+										data-mask_in="x:0px;y:[100%];" 
+										data-mask_out="x:inherit;y:inherit;" 
+										data-start="1000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on" 
+										style="z-index: 6; white-space: nowrap;">
+										<h1>Ejemplos JQuery</h1>
+									</div>
+
+									<!-- LAYER NR. 2 -->
+									<div class="tp-caption" 
+										data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['-05','-05','63','0']"
+										data-width="none"
+										data-height="none"
+										data-whitespace="nowrap"
+										data-transform_idle="o:1;"
+							 
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+										data-mask_in="x:0px;y:[100%];" 
+										data-mask_out="x:inherit;y:inherit;" 
+										data-start="2000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on" 
+										style="z-index: 6; white-space: nowrap;">
+										<h6>Grupo 7</h6>
+									</div>
+
+
+									<!-- LAYER NR. 3 -->
+									<div class="tp-caption"
+										data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['52','52','125','80']"
+										data-transform_idle="o:1;"
+							 
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+										data-mask_in="x:0px;y:[100%];" 
+										data-mask_out="x:inherit;y:inherit;" 
+										data-start="3000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on">
+										<a href="#" class="project-button hvr-bounce-to-right">Mas Informacion</a>
+									</div>
+								
+								</li>
+
+
+								<!-- SLIDE2  -->
+								<li data-index="rs-20" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="video/drinkwinecover.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Title Goes Here" data-description="">
+									<!-- MAIN IMAGE -->
+									<img src="video/drinkwinecover.jpg"  alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140">
+									<!-- LAYERS -->
+
+									<!-- BACKGROUND VIDEO LAYER -->
+									<div class="rs-background-video-layer" 
+										data-forcerewind="on" 
+										data-volume="mute" 
+										data-videowidth="100%" 
+										data-videoheight="100%" 
+										data-videomp4="video/Drink-Wine.mp4" 
+										data-videopreload="preload" 
+										data-videoloop="loopandnoslidestop" 
+										data-forceCover="1" 
+										data-aspectratio="16:9" 
+										data-autoplay="true" 
+										data-autoplayonlyfirsttime="false" 
+										data-nextslideatend="true" 
+									></div>
+
+									<!-- LAYER NR. 1 -->
+									<div class="tp-caption" 
+										data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['-58','-33','-33','-100']" 
+										data-width="none"
+										data-height="none"
+										data-whitespace="nowrap"
+										data-transform_idle="o:1;"
+							 
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+										data-mask_in="x:0px;y:[100%];" 
+										data-mask_out="x:inherit;y:inherit;" 
+										data-start="1000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on" 
+										style="z-index: 6; white-space: nowrap;">
+										<h1>Ejemplos JQuery</h1>
+									</div>
+
+									<!-- LAYER NR. 2 -->
+									<div class="tp-caption" 
+										data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['-05','93','93','20']"
+										data-width="none"
+										data-height="none"
+										data-whitespace="nowrap"
+										data-transform_idle="o:1;"
+							 
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+										data-mask_in="x:0px;y:[100%];" 
+										data-mask_out="x:inherit;y:inherit;" 
+										data-start="2000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on" 
+										style="z-index: 6; white-space: nowrap;">
+										<h6>Grupo 7</h6>
+									</div>
+
+
+									<!-- LAYER NR. 3 -->
+									<div class="tp-caption"
+										data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['52','185','185','105']"
+										data-transform_idle="o:1;"
+							 
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+										data-mask_in="x:0px;y:[100%];" 
+										data-mask_out="x:inherit;y:inherit;" 
+										data-start="3000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on">
+										<a href="#" class="project-button hvr-bounce-to-right">Web Site</a>
+									</div>
+								</li>
+
+								<!-- SLIDE3  -->
+								<li data-index="rs-18" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="images/home/slide-2.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Title Goes Here" data-description="">
+									<!-- MAIN IMAGE -->
+									<img src="images/home/slide-2.jpg"  alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140">
+									<!-- LAYERS -->
+
+									<!-- LAYER NR. 1 -->
+									<div class="tp-caption" 
+										data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['-58','-33','-33','-100']" 
+										data-width="none"
+										data-height="none"
+										data-whitespace="nowrap"
+										data-transform_idle="o:1;"
+							 
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+										data-mask_in="x:0px;y:[100%];" 
+										data-mask_out="x:inherit;y:inherit;" 
+										data-start="1000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on" 
+										style="z-index: 6; white-space: nowrap;">
+										<h1>Ejemplos JQuery</h1>
+									</div>
+
+									<!-- LAYER NR. 2 -->
+									<div class="tp-caption" 
+										data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['-05','93','93','20']"
+										data-width="none"
+										data-height="none"
+										data-whitespace="nowrap"
+										data-transform_idle="o:1;"
+							 
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+										data-mask_in="x:0px;y:[100%];" 
+										data-mask_out="x:inherit;y:inherit;" 
+										data-start="2000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on" 
+										style="z-index: 6; white-space: nowrap;">
+										<h6>Grupo 7</h6>
+									</div>
+
+
+									<!-- LAYER NR. 3 -->
+									<div class="tp-caption"
+										data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['52','185','185','105']"
+										data-transform_idle="o:1;"
+							 
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+										data-mask_in="x:0px;y:[100%];" 
+										data-mask_out="x:inherit;y:inherit;" 
+										data-start="3000" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-responsive_offset="on">
+										<a href="contact-us.html" class="project-button hvr-bounce-to-right">Web Site</a>
+									</div>
+								</li>
+							</ul>	
+						</div>
+					</div><!-- END REVOLUTION SLIDER -->
+	        </div> <!--  /#banner -->
+
+
+
+	        <!--
+			=====================================================
+				About us Section
+			=====================================================
+			-->
+			<section id="about-us">
+				<div class="container">
+					<div class="theme-title">
+						<h2>¿Qué es y para qué usar JQuery?</h2>
+						<p>	Todos los navegadores web modernos incluyen de forma nativa información para procesar muchas funciones básicas de JavaScript, que permiten funcionalidades elementales.
+							JQuery es una librería que contiene otras funcionalidades adicionales, que nos permiten agregarle a las páginas mucha más interacción y efectos.</p>
+					</div> <!-- /.theme-title -->
+
+
+					<div class="theme-title">
+						<h2>Como usar JQuery</h2>
+						<p>	El primer requisito para usar JQuery es agregar la librería, que podemos cargar desde su principal repositorio o desde otros CDN de internet.
+							<br>En JQuery se pueden usar como selectores elementos HTML como a (enlaces) h1, h2, etc.<br> También clases usando (.nombre) e identificadores (#nombre).</p>
+					</div> <!-- /.theme-title -->
+
+			<!--
+			=====================================================
+				Imagen Insertada
+			=====================================================
+			-->
+			<div id="team-section">
+				<div class="container">
+					<div class="theme-title">
+						<h2>Sintaxis JQuery</h2>
+						<p>En la siguiente imagen se puede ver de forma gráfica el uso de cada elemento.</p>
+					</div> <!-- /.theme-title -->
+
+					<div class="clear-fix team-member-wrapper">
+						
+						<div class="float-left">
+							<div class="single-team-member">
+							</div> <!-- /.single-team-member -->
+						</div> <!-- /float-left -->
+
+						<div class="float-left">
+							<div class="single-team-member">
+								<div class="img">
+									<img src="images/project/10.jpg" alt="Image">
+									<div class="opacity tran4s">
+										<h4>Sintaxis</h4>
+										<span>Elementos</span>
+										<p style="text-align: justify;" >Es posible también usar otros eventos 
+										   como dblclick, hover, keypress, keyup, focus y otros.
+										   Es posible encadenar múltiples métodos en una sola línea de código. 
+										   Esto permite realizar múltiples operaciones en los elementos seleccionados de forma más concisa. 
+										   Los métodos se encadenan uno tras otro, separados por puntos (.).</p>
+									</div>
+								</div> <!-- /.img -->
+								<div class="member-name">
+									<h6>Sintaxis</h6>
+									<p>Elementos</p>
+								</div> <!-- /.member-name -->
+							</div> <!-- /.single-team-member -->
+						</div> <!-- /float-left -->
+
+						<div class="float-left">
+							<div class="single-team-member">
+					
+
+							</div> <!-- /.single-team-member -->
+						</div> <!-- /float-left -->
+
+
+					</div> <!-- /.team-member-wrapper -->
+				</div> <!-- /.conatiner -->
+			</div> <!-- /#team-section -->
+
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-6">
+							<div class="single-about-content">
+								<div class="icon round-border tran3s">
+									<i class="fa fa-check-square-o" aria-hidden="true"></i>
+								</div>
+								<h5><a href="#" class="tran3s">Selector</a></h5>
+								<p>✔Es una expresión que indica qué elementos HTML se van a seleccionar. 
+									Puede ser una etiqueta HTML, una clase, un ID, un atributo, una relación entre elementos, entre otros. Se utiliza $() para crear un objeto jQuery y pasarle el selector como argumento.</p>
+							</div> <!-- /.single-about-content -->
+						</div> <!-- /.col -->
+
+						<div class="col-lg-3 col-md-3 col-sm-6">
+							<div class="single-about-content">
+								<div class="icon round-border tran3s">
+									<i class="fa fa-check-square-o" aria-hidden="true"></i>
+								</div>
+								<h5><a href="#" class="tran3s">Metodo</a></h5>
+								<p>✔ Representa una acción que se realizará en los elementos seleccionados. Los métodos en jQuery se encadenan después del selector y se invocan mediante un punto (.) seguido del nombre del 
+									 método. Los métodos pueden incluir manipulación del DOM, eventos, animaciones, entre otros.</p>
+							</div> <!-- /.single-about-content -->
+						</div> <!-- /.col -->
+
+						<div class="col-lg-3 col-md-3 col-sm-6">
+							<div class="single-about-content">
+								<div class="icon round-border tran3s">
+									<i class="fa fa-check-square-o" aria-hidden="true"></i>
+								</div>
+								<h5><a href="#" class="tran3s">Paramentro</a></h5>
+								<p>✔ Algunos métodos de jQuery aceptan parámetros adicionales que se utilizan para personalizar su comportamiento. Los parámetros se colocan entre paréntesis después del nombre del método y se separan por comas si hay más de uno.
+								</p>
+							</div> <!-- /.single-about-content -->
+						</div> <!-- /.col -->
+
+						<div class="col-lg-3 col-md-3 col-sm-6">
+							<div class="single-about-content">
+								<div class="icon round-border tran3s">
+									<i class="fa fa-check-square-o" aria-hidden="true"></i>
+								</div>
+								<h5><a href="#" class="tran3s">FUNCIONES</a></h5>
+								<p>✔ Algunos métodos de jQuery aceptan una función de devolución de llamada como parámetro. Esta función se ejecutará después de que se complete la acción del método.</p>							
+							</div> <!-- /.single-about-content -->
+						</div> <!-- /.col -->
+					</div> <!-- /.row -->
+					
+				</div> <!-- /.container -->
+
+		
+			</section> <!-- /#about-us -->
+
+
+			<!--
+			=====================================================
+				Service Section
+			=====================================================
+			-->
+			<div id="service-section">
+				<div class="container">
+					<div class="theme-title">
+						<h2>Animaciones</h2>
+						<p>En los primeros ejemplos usamos varios métodos de efectos de JQuery, para mover, ocultar y mostrar elementos, usando animaciones.</p>
+					</div> <!-- /.theme-title --><br>
+					<div id="cont1" class="bloque">BLOQUE DE PRUEBA</div><br>
+					<div class="button-container">
+						<button class="aBk" id="c1">Ocultar bloque</button>
+						<button class="aBk" id="c2">Mostrar bloque</button>
+						<button class="aBk" id="c1b">Ocultar / Mostrar</button>
+						<button class="aBk" id="c3">Cambiar tamaño</button>
+						<button class="aBk" id="c4">Ocultar con FadeOut</button>
+						<button class="aBk" id="c5">Mostrar con FadeIn</button>
+						<button class="aBk" id="c6">Mover</button>
+						<button class="aBk" id="c7">Cambiar estilo CSS</button>
+					</div>
+
+					<div class="theme-title">
+					<p>Todos los efectos anteriores se consiguen usando los siguientes métodos:</p><br>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-service-content">
+								<div class="icon-heading tran3s">
+									<div class="icon tran3s"><i class="fa fa-paint-brush" aria-hidden="true"></i></div>
+									<h6><a href="#" class="tran3s">Hide (Ocultar Bloque)</a></h6>
+								</div>
+								<p>Se utiliza para ocultar elementos HTML en una página web. Cuando se llama a la 
+								   función hide(), los elementos seleccionados se ocultan y ya no se muestran en la página.</p>
+							</div> <!-- /.single-service-content -->
+						</div> <!-- /.col-lg -->
+
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-service-content">
+								<div class="icon-heading tran3s">
+									<div class="icon tran3s"><i class="fa fa-camera" aria-hidden="true"></i></div>
+									<h6><a href="#" class="tran3s">Show (Mostrar Bloque)</a></h6>
+								</div>
+								<p> En jQuery se utiliza para mostrar elementos HTML que han sido ocultados previamente.
+									Cuando se llama a la función show(), los elementos seleccionados se vuelven a mostrar en la página. </p>
+								
+								</div> <!-- /.single-service-content -->
+						</div> <!-- /.col-lg -->
+
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-service-content">
+								<div class="icon-heading tran3s">
+									<div class="icon tran3s"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+									<h6><a href="#" class="tran3s">Toggle (Ocultar / Mostrar)</a></h6>
+								</div>
+								<p>En jQuery se utiliza para alternar entre mostrar y ocultar elementos HTML en una página web. 
+								   Si un elemento está visible, la función toggle() lo ocultará, y si está oculto, la función toggle() lo mostrará.</p>
+							</div> <!-- /.single-service-content -->
+						</div> <!-- /.col-lg -->
+
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-service-content">
+								<div class="icon-heading tran3s">
+									<div class="icon tran3s"><i class="fa fa-line-chart" aria-hidden="true"></i></div>
+									<h6><a href="#" class="tran3s">Animate ( Cambiar Tamaño y Mover)</a></h6>
+								</div>
+								<p> En jQuery se utiliza para crear animaciones personalizadas en elementos HTML. Permite cambiar gradualmente 
+									los valores de uno o varios atributos CSS de un elemento a lo largo de un período de tiempo determinado.</p>
+							</div> <!-- /.single-service-content -->
+						</div> <!-- /.col-lg -->
+
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-service-content">
+								<div class="icon-heading tran3s">
+									<div class="icon tran3s"><i class="fa fa-life-ring" aria-hidden="true"></i></div>
+									<h6><a href="#" class="tran3s">fade Toggle (Ocultar con FadeOut)</a></h6>
+								</div>
+								<p> Se utiliza para alternar entre el estado de visibilidad de un elemento con una animación de desvanecimiento (fade).
+									Si el elemento está visible, se desvanecerá gradualmente y se ocultará. Si está oculto, se desvanecerá gradualmente y se mostrará. </p>
+							</div> <!-- /.single-service-content -->
+						</div> <!-- /.col-lg -->
+
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-service-content">
+								<div class="icon-heading tran3s">
+									<div class="icon tran3s"><i class="fa fa-anchor" aria-hidden="true"></i></div>
+									<h6><a href="#" class="tran3s">fadeIn (Mostrar con FadeIn)</a></h6>
+								</div>
+								<p> Se utiliza para mostrar elementos HTML gradualmente con una animación suave. Con la función fadeIn(), los elementos 
+									seleccionados se muestran de manera gradual, desde estar ocultos hasta estar completamente visibles.</p>
+							</div> <!-- /.single-service-content -->
+						</div> <!-- /.col-lg -->
+					</div> <!-- /.row -->
+				</div> <!-- /.container -->
+			</div> <!-- /#service-section -->
+
+
+
+			<!--
+			=====================================================
+				Project Section
+			=====================================================
+			-->
+			<div id="project-section">
+				<div class="container">
+					<div class="theme-title">
+						<h2>Efectos</h2>
+						<p>Los efectos en jQuery son métodos y funcionalidades que permiten agregar animaciones y 
+						   transiciones a los elementos HTML seleccionados. 
+						   Estos efectos añaden dinamismo e interactividad a las páginas web, mejorando la experiencia del usuario.</p>
+					</div> <!-- /.theme-title --><br>
+	
+					
+					<h4 style="text-align: center;">Copiar y escribir texto y HTML con JQuery</h4><br>
+
+					<div style="display: flex; justify-content: center; align-items: center; height: 40px;">
+						<h0 style="font-size:40px; font-family: Arial, Helvetica, sans-serif; color: red; font-style: italic; text-shadow: 3px 3px 4px rgba(0, 0, 0, 1.5);">GRUPO 7</h0>
+					</div><br>
+					  
+					<div class="row">
+						
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<div class="single-service-content">
+								<p>Se copia el título creado arriba y se pega en un contenedor en formato de texto.<br><br></p>
+								<button class="aBkAB" id="c12">Copiar texto</button><br>
+								<div id="cont3" class=""></div>
+
+							</div> <!-- /.single-service-content -->
+						</div> <!-- /.col-lg -->
+
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<div class="single-service-content">
+								<p> Se escribe el contenido anterior en formato HTML.<br><br></p>
+								<button class="aBkAB" id="c13">Escribir Texto</button><br>
+								<div id="cont4" class="text-center"></div>
+							</div> <!-- /.single-service-content -->
+						</div> <!-- /.col-lg -->
+
+					</div> <!-- /.row --><br>
+
+					<h4 style="text-align: center;">Usar contenedor o bloque como evento</h4><br>
+
+					<div class="row">
+						
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<div class="single-service-content2">
+								<h6>Contenedor</h6>
+								<p style="text-align: justify;">En el siguiente ejemplo usamos como evento en vez de un enlace o un botón, el mismo contenedor o bloque.<br>
+								Usamos tres métodos encadenados, hide(), delay() y show(), para que al dar clic encima se oculte el bloque.<br></p>
+								<div id="cont2" class="bloque">Toca para ocultarme</div>
+								<p><b>Vuelve a aparecer lentamente después de dos segundos.<br></b></p>
+								
+							</div> <!-- /.single-service-content -->
+						</div> <!-- /.col-lg -->
+
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<div class="single-service-content2">
+								<h6>Evento hover</h6>
+								<p style="text-align: justify;">Otros de los eventos muy utilizados es hover, que permite efectuar cualquier acción al situar el cursor del ratón encima de un elemento.<br></p>
+								<div class="yellow">
+								<p>Por ejemplo al situarlo encima de este párrafo o bloque de texto, se muestra su fondo de color amarillo y retorna a su color predeterminado al retirarlo de encima.</p>
+								</div>
+							
+							</div> <!-- /.single-service-content -->
+						</div> <!-- /.col-lg -->
+
+					</div> <!-- /.row -->
+
+					<br>
+					<h4 style="text-align: center;">Usar teclado como Evento</h4><br>
+					<div class="single-service-content2">
+					
+					<p style="text-align: justify;">Otros eventos que se emplean mucho en las páginas son los que desencadenan acciones en el teclado.
+					En el siguiente ejemplo usamos los eventos keyup() y keydown(), para contar la cantidad de caracteres en el cuadro de texto y mostrarlos.<br></p>
+					<b>Contador de caracteres</b><br>
+					<textarea cols='158' rows='4' class="texta2"></textarea><br>
+					<div style="color: red;"id="characters">Numero de Caracteres</div>
+					<br>
+
+				</div>	
+				</div> <!-- /.container -->
+			</div> <!-- /#project-section -->
+
+
+			<!--
+			=====================================================
+				Footer
+			=====================================================
+			-->
+			<footer>
+				<div class="container">
+					<a href="index.html" class="logo"><img src="images/logo/logo.png" alt="Logo"></a>
+
+					<ul>
+						<li><a href="#" class="tran3s round-border"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="tran3s round-border"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="tran3s round-border"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="tran3s round-border"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+					</ul>
+					<p>Copyright @2023 All rights reserved | Esta plantilla fue modificada por: <a href="#" target="_blank">Grupo 7</a></p>
+				</div>
+			</footer>
+
+
+
+
+			<!-- =============================================
+				Loading Transition
+			============================================== -->
+			<div id="loader-wrapper">
+				<div id="preloader_1">
+	                <span></span>
+	                <span></span>
+	                <span></span>
+	                <span></span>
+	                <span></span>
+	            </div>
+			</div>
+
+			
+	        <!-- Scroll Top Button -->
+			<button class="scroll-top tran3s p-color-bg">
+				<i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+			</button>
+
+
+
+
+		<!-- Js File_________________________________ -->
+
+		<!-- j Query -->
+		<script type="text/javascript" src="vendor/jquery.2.2.3.min.js"></script>
+
+		<!-- Bootstrap JS -->
+		<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+
+		<!-- Vendor js _________ -->
+		
+		<!-- revolution -->
+		<script src="vendor/revolution/jquery.themepunch.tools.min.js"></script>
+		<script src="vendor/revolution/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.slideanims.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.layeranimation.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.navigation.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.kenburn.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.actions.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.video.min.js"></script>
+
+		<!-- Google map js -->
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ8VrXgGZ3QSC-0XubNhuB2uKKCwqVaD0&callback=goMap" type="text/javascript"></script> <!-- Gmap Helper -->
+		<script src="vendor/gmaps.min.js"></script>
+		<!-- owl.carousel -->
+		<script type="text/javascript" src="vendor/owl-carousel/owl.carousel.min.js"></script>
+		<!-- mixitUp -->
+		<script type="text/javascript" src="vendor/jquery.mixitup.min.js"></script>
+		<!-- Progress Bar js -->
+		<script type="text/javascript" src="vendor/skills-master/jquery.skills.js"></script>
+		<!-- Validation -->
+		<script type="text/javascript" src="vendor/contact-form/validate.js"></script>
+		<script type="text/javascript" src="vendor/contact-form/jquery.form.js"></script>
+
+
+		<!-- Theme js -->
+		<script type="text/javascript" src="js/theme.js"></script>
+		<script type="text/javascript" src="js/map-script.js"></script>
+
+		</div> <!-- /.main-page-wrapper -->
+
+		
+		<script src="../js/ejemplos-jquery.js"></script>
+	
+	
+	</body>
+</html>
